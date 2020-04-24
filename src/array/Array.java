@@ -1,10 +1,10 @@
 package array;
 
-import org.omg.CORBA.Object;
 
 /**
  * @author ckf48
  */
+//dynamic array
 public class Array<E> {
     private E[] data;
     private int size;
@@ -74,7 +74,7 @@ public class Array<E> {
         }
         size--;
         data[size] = null;
-        if (size == data.length / 2) {
+        if (size == data.length / 4 && data.length / 2 != 0) {
             resize(data.length / 2);
         }
         return ret;
