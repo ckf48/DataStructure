@@ -62,7 +62,7 @@ public class Array<E> {
     }
 
 
-    //从数组中删除并返回元素
+    //从数组中删除并返回元素https://github.com/ckf48/ImoocDataStructure.git
     //支持减容
     public E remove(int index) {
         if (index < 0 || index >= size) {
@@ -85,7 +85,7 @@ public class Array<E> {
     }
 
     public E removeLast() {
-        return remove(size);
+        return remove(size - 1);
     }
 
     public boolean removeElement(E e) {
@@ -102,6 +102,14 @@ public class Array<E> {
             throw new IllegalArgumentException();
         }
         return data[index];
+    }
+
+    public E getLast() {
+        return get(size - 1);
+    }
+
+    public E getFirst() {
+        return get(0);
     }
 
     public void set(int index, E e) {
