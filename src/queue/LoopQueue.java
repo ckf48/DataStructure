@@ -1,5 +1,8 @@
 package queue;
 
+/**
+ * @author ckf48
+ */
 public class LoopQueue<E> implements Queue<E> {
     private E[] data;
     private int front;

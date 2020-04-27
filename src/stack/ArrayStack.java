@@ -2,8 +2,12 @@ package stack;
 
 import array.Array;
 
+/**
+ * @author ckf48
+ */
 public class ArrayStack<E> implements Stack<E> {
     //reuse the dynamic array in package array
+
     private final Array<E> array;
 
     public ArrayStack(int capacity) {

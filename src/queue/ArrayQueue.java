@@ -2,8 +2,12 @@ package queue;
 
 import array.Array;
 
+/**
+ * @author ckf48
+ */
 public class ArrayQueue<E> implements Queue<E> {
     //reuse dynamic array
+
     private final Array<E> array;
 
     public ArrayQueue(int capacity) {
