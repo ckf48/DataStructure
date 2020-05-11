@@ -6,7 +6,7 @@ import list.LinkedList;
  * @author ckf48
  */
 public class LinkedListStack<E> implements Stack<E> {
-    private LinkedList<E> linkedList;
+    private final LinkedList<E> linkedList;
 
     public LinkedListStack() {
         linkedList = new LinkedList<>();
